@@ -3,6 +3,10 @@ span{
   text-decoration: underline;
 }
 
+.wrapper{
+  margin-top: 20px;
+}
+
 /* Background Transform */
 .bg{
   height: 20vh;

@@ -3,6 +3,7 @@ import React from 'react'
 
 const ApprovalCard = (props) => {
 
+// ===== Style comment cards using Semantic UI stylings (installed)
   return(
     <div className="ui card">
       <div className="content">{props.children}</div>
