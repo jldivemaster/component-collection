@@ -3,6 +3,7 @@ import CommentCard from './components/CommentCard';
 import BGTransform from './components/BGTransform';
 import SeasonComponent from './components/SeasonComponent';
 import PicsApp from './components/PicsApp';
+import VideoApp from  './components/VideoApp';
 
 export default class Main extends React.Component {
 
@@ -33,6 +34,13 @@ export default class Main extends React.Component {
           <br />
           <div className="pics">
             <PicsApp />
+          </div>
+        </div>
+        <div className="wrapper">
+          <span>Display Youtube Video (Youtube API) </span>
+          <br />
+          <div className="video">
+            <VideoApp />
           </div>
         </div>
         <div>end
