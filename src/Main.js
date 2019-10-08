@@ -4,6 +4,7 @@ import BGTransform from './components/BGTransform';
 import SeasonComponent from './components/SeasonComponent';
 import PicsApp from './components/PicsApp';
 import VideoApp from  './components/VideoApp';
+import ReduxIndex from './reduxapp/ReduxIndex';
 
 export default class Main extends React.Component {
 
@@ -37,10 +38,17 @@ export default class Main extends React.Component {
           </div>
         </div>
         <div className="wrapper">
-          <span>Display Youtube Video (Youtube API) </span>
+          <span>Display Youtube Video (Youtube API call w/ async syntax, ui styling) </span>
           <br />
           <div className="video">
             <VideoApp />
+          </div>
+        </div>
+        <div className="wrapper">
+          <span>Display Songs List (Redux, ui styling) </span>
+          <br />
+          <div className="video">
+            <ReduxIndex />
           </div>
         </div>
         <div>end
