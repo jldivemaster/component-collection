@@ -5,6 +5,7 @@ import SeasonComponent from './components/SeasonComponent';
 import PicsApp from './components/PicsApp';
 import VideoApp from  './components/VideoApp';
 import ReduxIndex from './reduxapp/ReduxIndex';
+import BlogIndex from './reduxblogapp/BlogIndex';
 
 export default class Main extends React.Component {
 
@@ -47,8 +48,15 @@ export default class Main extends React.Component {
         <div className="wrapper">
           <span>Display Songs List (Redux, ui styling) </span>
           <br />
-          <div className="video">
+          <div className="songs">
             <ReduxIndex />
+          </div>
+        </div>
+        <div className="wrapper">
+          <span>Display Blog Posts (Redux, axios call w/ Redux-Thunk) </span>
+          <br />
+          <div className="blog">
+            <BlogIndex />
           </div>
         </div>
         <div>end

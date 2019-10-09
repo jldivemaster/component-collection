@@ -16,7 +16,7 @@ const selectedSongReducer = (selectedSong=null, action) => {
 
   return selectedSong;
 };
-
+// ====Keys in this function are keys within the state object.======
 export default combineReducers({
   songs: songsReducer,
   selectedSong: selectedSongReducer
