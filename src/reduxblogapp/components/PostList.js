@@ -34,8 +34,9 @@ class PostList extends React.Component {
   };
 }
 
+// Using slice to limit list display to 5:
 const mapStateToProps = (state) => {
-  return { posts: state.posts }
+  return { posts: state.posts.slice(0, 5) }
 };
 
 export default connect(mapStateToProps, { fetchPostsAndUsers })(PostList);

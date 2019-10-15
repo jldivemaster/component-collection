@@ -6,6 +6,7 @@ import PicsApp from './components/PicsApp';
 import VideoApp from  './components/VideoApp';
 import ReduxIndex from './reduxapp/ReduxIndex';
 import BlogIndex from './reduxblogapp/BlogIndex';
+import ContextApp from './contextapp/components/ContextApp';
 
 export default class Main extends React.Component {
 
@@ -59,7 +60,15 @@ export default class Main extends React.Component {
             <BlogIndex />
           </div>
         </div>
-        <div>end
+        <div className="wrapper">
+          <span>Change language on form using Context system </span>
+          <br />
+          <div className="context">
+            <ContextApp />
+          </div>
+        </div>
+        <div className="wrapper">
+        <span>end</span>
         </div>
       </div>
     )
