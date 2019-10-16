@@ -5,11 +5,15 @@ import ColorContext from '../contexts/ColorContext';
 // Using Consumer to retrieve data:
 class Button extends React.Component {
 
+  renderSubmit(lang, color) {
+    return lang === 'english' ? 'Submit' : 'Voorleggen';
+  };
+
   renderButton(color) {
     return (
-      <button className={`ui button ${color}`}>
+      <button className={`ui button primary`}>
         <LanguageContext.Consumer>
-          {(value) => value === 'english' ? 'Submit' : 'Voorleggen'}
+          {({ language }) => this.renderSubmit(language)}
         </LanguageContext.Consumer>
       </button>
     )
@@ -17,9 +21,11 @@ class Button extends React.Component {
 
   render() {
     return (
+
       <ColorContext.Consumer>
         {color => this.renderButton(color)}
       </ColorContext.Consumer>
+
     )
   };
 }
