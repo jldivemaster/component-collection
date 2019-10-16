@@ -8,9 +8,11 @@ import reducers from './reducers';
 // === Usually the index.js file that calls ReactDOM.render =====
 const ReduxIndex = () => {
   return (
-    <Provider store={createStore(reducers)}>
-      <ReduxApp />
-    </Provider>
+    <div className="songs">
+      <Provider store={createStore(reducers)}>
+        <ReduxApp />
+      </Provider>
+    </div>
 )};
 
 export default ReduxIndex;

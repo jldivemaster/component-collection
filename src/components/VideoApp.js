@@ -32,6 +32,7 @@ export default class VideoApp extends React.Component {
 
   render(){
     return(
+      <div className="video">
       <div className="ui container">
         <VideoSearchBar onFormSubmit={this.onTermSubmit} />
         <div className="ui grid">
@@ -44,6 +45,7 @@ export default class VideoApp extends React.Component {
             </div>
           </div>
         </div>
+      </div>
       </div>
     )
   }

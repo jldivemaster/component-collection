@@ -9,9 +9,11 @@ const store = createStore(reducers, applyMiddleware(thunk))
 
 const BlogIndex = () => {
   return (
-    <Provider store={store}>
-      <BlogApp />
-    </Provider>
+    <div className="blog">
+      <Provider store={store}>
+        <BlogApp />
+      </Provider>
+    </div>
   )
 };
 
