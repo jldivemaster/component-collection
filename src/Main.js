@@ -38,7 +38,7 @@ export default class Main extends React.Component {
         <div className="wrapper">
           <span>
             <Link to="/pics">
-              Display list of tiles (search bar, axios api call, Refs, grid css)
+              Display list of tiled pics (search bar, axios api call, Refs, grid css)
             </Link>
           </span>
           <br />
@@ -47,7 +47,7 @@ export default class Main extends React.Component {
         <div className="wrapper">
           <span>
             <Link to="/videos">
-              Display Youtube Video (Youtube API call w/ async syntax, ui styling)
+              Embedded Youtube Videos (Youtube API call w/ async syntax, ui styling)
             </Link>
           </span>
           <br />

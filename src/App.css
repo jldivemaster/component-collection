@@ -1,6 +1,7 @@
 /* Overall App styling */
 span{
   text-decoration: underline;
+  font-size: 20px;
 }
 
 .wrapper{
