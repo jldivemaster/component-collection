@@ -11,6 +11,7 @@ import VideoApp from  './components/VideoApp';
 import ReduxIndex from './reduxapp/ReduxIndex';
 import BlogIndex from './reduxblogapp/BlogIndex';
 import ContextApp from './contextapp/components/ContextApp';
+import HooksApp from './components/HooksApp';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // Create a  React Component
 
@@ -30,6 +31,7 @@ const App = () => {
         <Route path="/songs" component={ReduxIndex} />
         <Route path="/posts" component={BlogIndex} />
         <Route path="/context" component={ContextApp} />
+        <Route path="/hooks" component={HooksApp} />
       </Switch>
       </div>
     </BrowserRouter>

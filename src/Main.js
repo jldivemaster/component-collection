@@ -74,8 +74,17 @@ export default class Main extends React.Component {
 
         <div className="wrapper">
           <span>
-            <Link to="context">
+            <Link to="/context">
               Change language on form using Context system
+            </Link>
+          </span>
+          <br />
+        </div>
+
+        <div className="wrapper">
+          <span>
+            <Link to="/hooks">
+              Posts/Todos List with Hooks
             </Link>
           </span>
           <br />

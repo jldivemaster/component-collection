@@ -11,7 +11,7 @@ export default class VideoApp extends React.Component {
    }
 
    componentDidMount() {
-     this.onTermSubmit('cars')
+     this.onTermSubmit('Disturbed')
    };
 
   onTermSubmit = async term => {
