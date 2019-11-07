@@ -12,6 +12,7 @@ import ReduxIndex from './reduxapp/ReduxIndex';
 import BlogIndex from './reduxblogapp/BlogIndex';
 import ContextApp from './contextapp/components/ContextApp';
 import HooksApp from './components/HooksApp';
+import PhotoGallery from './components/PhotoGallery';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 // Create a  React Component
 
@@ -27,6 +28,7 @@ const App = () => {
         <Route path="/bgtransform" component={BGTransform} />
         <Route path="/seasondisplay" component={SeasonComponent} />
         <Route path="/pics" component={PicsApp} />
+        <Route path="/gallery" component={PhotoGallery} />
         <Route path="/videos" component={VideoApp} />
         <Route path="/songs" component={ReduxIndex} />
         <Route path="/posts" component={BlogIndex} />

@@ -19,9 +19,10 @@ export default class ImageCard extends React.Component {
     const spans = Math.ceil(height / 10);
     this.setState({ spans })
   }
-  
+
 
   render() {
+    console.log(this.imageRef.current)
     const { description, urls } = this.props.image;
     return(
       <div style={{ gridRowEnd: `span ${this.state.spans}` }}>
