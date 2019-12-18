@@ -100,7 +100,15 @@ export default class Main extends React.Component {
         </div>
         <div className='lr_embed' style={{ position: 'relative', paddingBottom: '50%', height: '0', overflow: 'hidden' }}><iframe id='iframe' src='https://lightroom.adobe.com/embed/shares/af043268f38b48699ac4a8fa830936a8/slideshow?background_color=%232D2D2D&color=%23999999' frameBorder='0' style={{ width: '100%', height: '100%', position: 'absolute', top: '0', left: '0' }} ></iframe></div>
         <div className="wrapper">
-        <span>end</span>
+          <span>
+            <Link to="/map">
+              Map View w/ Geolocator
+            </Link>
+          </span>
+          <br />
+        </div>
+        <div className="wrapper">
+          <span>end</span>
         </div>
       </div>
     )

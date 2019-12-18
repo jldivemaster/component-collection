@@ -26,6 +26,22 @@ state = {
     );
   }
 
+  // ======More error handling for geolocation ==========
+  // switch(error.code) {
+  //       case error.PERMISSION_DENIED:
+  //           return "User denied the request for Geolocation."
+  //           break;
+  //       case error.POSITION_UNAVAILABLE:
+  //           return "Location information is unavailable."
+  //           break;
+  //       case error.TIMEOUT:
+  //           return "The request to get user location timed out."
+  //           break;
+  //       case error.UNKNOWN_ERROR:
+  //           return "An unknown error occurred."
+  //           break;
+  //   }
+
   renderContent = () => {
     if(this.state.errorMsg && !this.state.lat){
       return <div>Error: {this.state.errorMsg}</div>;
