@@ -1,5 +1,6 @@
 import React from 'react';
 import { Map, GoogleApiWrapper, Marker, MarkerWithLabel } from 'google-maps-react';
+import APIKey from '../api/GoogleMap';
 
 
 class MapView extends React.Component {
@@ -54,7 +55,7 @@ class MapView extends React.Component {
   showInMap = () => {
     let latlon = this.state.lat + "," + this.state.long;
     console.log(latlon);
-    let img_url = `https://maps.googleapis.com/maps/api/staticmap?center=${latlon}&zoom=14&size=400x300&sensor=false&key=AIzaSyBjcckOf990hsrDZGJnTgbnapjYlbaeYmY`;
+    let img_url = `https://maps.googleapis.com/maps/api/staticmap?center=${latlon}&zoom=14&size=400x300&sensor=false&key=${APIKey}`;
     return <img src={img_url}></img>;
   };
 
